@@ -14,7 +14,7 @@ function Service() {
         <div className="service-wapper">
           <div className="service-img-container">
             <Image
-              src={"/sanitary-equipment.jpg"}
+              src={"/image1.jpeg"}
               layout="fill"
               alt="installation sanitaire"
             />
@@ -35,7 +35,7 @@ function Service() {
         <div className="service-wapper">
           <div className="service-img-container">
             <Image
-              src={"/sanitary-equipment.jpg"}
+              src={"/image2.jpeg"}
               layout="fill"
               alt="installation sanitaire"
             />
