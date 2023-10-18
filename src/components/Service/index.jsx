@@ -4,7 +4,7 @@ import Iconify from "../Iconify";
 
 function Service() {
   return (
-    <div className="all-service-container container">
+    <div className="all-service-container container" id="services">
       <h2>Nos Services IEM</h2>
       <p>
         produits IEM de qualité supérieure, comprenant des solutions mécaniques,
@@ -21,7 +21,7 @@ function Service() {
           </div>
           <div className="icon-service-name">
             <div>
-              <Iconify icon={"carbon:location"} width={25} />
+              <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
             <h3>Service name here</h3>
           </div>
@@ -42,7 +42,7 @@ function Service() {
           </div>
           <div className="icon-service-name">
             <div>
-              <Iconify icon={"carbon:location"} width={25} />
+              <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
             <h3>Service name here</h3>
           </div>
@@ -63,7 +63,7 @@ function Service() {
           </div>
           <div className="icon-service-name">
             <div>
-              <Iconify icon={"carbon:location"} width={25} />
+              <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
             <h3>Service name here</h3>
           </div>
@@ -84,7 +84,7 @@ function Service() {
           </div>
           <div className="icon-service-name">
             <div>
-              <Iconify icon={"carbon:location"} width={25} />
+              <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
             <h3>Service name here</h3>
           </div>
@@ -105,7 +105,7 @@ function Service() {
           </div>
           <div className="icon-service-name">
             <div>
-              <Iconify icon={"carbon:location"} width={25} />
+              <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
             <h3>Service name here</h3>
           </div>
@@ -126,7 +126,7 @@ function Service() {
           </div>
           <div className="icon-service-name">
             <div>
-              <Iconify icon={"carbon:location"} width={25} />
+              <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
             <h3>Service name here</h3>
           </div>

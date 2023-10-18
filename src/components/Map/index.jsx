@@ -5,13 +5,13 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import Image from "next/image";
 
 function Map() {
-  const position = [35.83459993590379, 10.608135457673123];
+  const position = [36.77560486870581, 10.232006325402647];
 
   return (
     <MapContainer
       className="leaflet"
       center={position}
-      zoom={17}
+      zoom={16}
       scrollWheelZoom={true}
       style={{ flex: 1 }}
     >
@@ -22,13 +22,13 @@ function Map() {
       <Marker position={position} draggable={false} animate={true}>
         <Popup>
           <div className={"popup-content"}>
-            <Image
+            {/* <Image
               src="/softylinesLogo2.png"
               width={150}
               height={40}
               alt="softylines-logo"
-            />
-            <p className>Softylines Location</p>
+            /> */}
+            <p className>IEM LOCATION</p>
           </div>
         </Popup>
       </Marker>

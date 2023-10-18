@@ -76,7 +76,7 @@ function Services() {
 
   return (
     <div>
-      <div className="our-services container">
+      <div className="our-services container" id="nos-produits">
         <h2>Nos Produits IEM</h2>
         <p>
           produits IEM de qualité supérieure, comprenant des solutions
@@ -88,7 +88,7 @@ function Services() {
         </div>
         <SliderCard cardData={cardData} />
         <div className="button-container">
-          <button className={"active"}>Pneumatique</button>
+          <button className={"active"}>Electrique</button>
         </div>
         <SliderCard cardData={electrique} />
       </div>
