@@ -10,13 +10,13 @@ function HeaderTwo() {
             <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#products">Produits</a>
+            <a href="#nos-produits">Produits</a>
           </li>
           <li>
             <a href="#aboutus">A propos</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact-us">Contact</a>
           </li>
         </ul>
       </div>

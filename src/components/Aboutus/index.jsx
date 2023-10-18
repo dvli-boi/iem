@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div className="container about-us">
+    <div className="container about-us" id="aboutus">
       <img
         src="/WhatsApp Image 2023-10-13 at 7.39.30 AM (1).jpeg"
         alt=""

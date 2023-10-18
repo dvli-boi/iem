@@ -45,7 +45,7 @@ function ContactUs() {
     }
   };
   return (
-    <div className="contact-us">
+    <div className="contact-us" id="contact-us">
       <h2>Nous Contactez :</h2>
       <p>
         Chez IEM, l'excellence est notre priorité Contactez-nous dès aujourd'hui
