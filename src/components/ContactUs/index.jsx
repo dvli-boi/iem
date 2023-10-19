@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
 function ContactUs() {
-  emailjs.init("OAZEDqzcFmAYhzpS-"); // Replace 'YOUR_USER_ID' with your EmailJS public key
+  emailjs.init("UTi3uoTDNb0NikDPh"); // Replace 'YOUR_USER_ID' with your EmailJS public key
 
   const validationSchema = Yup.object({
     fullName: Yup.string().required("Nom Complet est requis"),
@@ -23,15 +23,15 @@ function ContactUs() {
       setSubmitting(true); // Set isSubmitting to true during submission
 
       const templateParams = {
-        to_email: "iem.2019@Yahoo.Com", // Replace with the recipient's email
+        to_email: "iem.team2023@gmail.com",
         from_name: values.fullName,
         message: values.message,
         email_sender: values.email,
       };
 
       await emailjs.send(
-        "service_1156k8i", // Replace with your EmailJS service ID
-        "template_czwco2g", // Replace with your EmailJS template ID
+        "service_5b2sss5", // Replace with your EmailJS service ID
+        "template_bur5emi", // Replace with your EmailJS template ID
         templateParams
       );
 
