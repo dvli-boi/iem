@@ -2,7 +2,6 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import Image from "next/image";
 
 function Map() {
   const position = [36.77560486870581, 10.232006325402647];
@@ -22,12 +21,6 @@ function Map() {
       <Marker position={position} draggable={false} animate={true}>
         <Popup>
           <div className={"popup-content"}>
-            {/* <Image
-              src="/softylinesLogo2.png"
-              width={150}
-              height={40}
-              alt="softylines-logo"
-            /> */}
             <p className>IEM LOCATION</p>
           </div>
         </Popup>

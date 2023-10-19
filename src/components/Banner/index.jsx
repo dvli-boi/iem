@@ -38,10 +38,12 @@ export default function Banner() {
             <div className="slider"></div>
             <a>nous contacter</a>
             <div className="slider-content">
-              <h2>Fabrication de Flexible & Vente matériel Hydraulique</h2>
+              <h2>
+                L'installation Et La Maintenance Des Équipements Électriques
+              </h2>
               <p>
                 des services complets de maintenance et d'installation
-                électrique pour
+                électrique sur mesure pour Vous
               </p>
             </div>
           </div>
