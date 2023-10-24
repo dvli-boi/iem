@@ -73,6 +73,14 @@ body {
   line-height: 4.9rem;
   background-color: rgba(0, 132, 255, 0.733);
 }
+@media (max-width: 1020px) {
+  .slider-content {
+    top: 40%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+  }
+}
 .slider-content {
   color: white;
   font-size: 2.6rem;
@@ -177,6 +185,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1400px) {
+  .second-header-wrapper,
+  .small-header {
+    padding: 0 2rem;
+  }
 }
 .nav-links {
   display: flex;
@@ -373,10 +387,10 @@ body {
     height: 350px;
   }
   .leaflet {
-    height: 350px;
+    min-height: 350px !important;
   }
   .leaflet-container {
-    height: 350px !important;
+    min-height: 350px !important;
   }
 }
 
@@ -425,6 +439,7 @@ body {
   display: flex;
   gap: 7rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .infos p {
@@ -432,6 +447,7 @@ body {
   font-size: 2.2rem;
   margin-top: 1.2rem;
   color: #6a6a6a;
+  white-space: nowrap;
 }
 .info-footer h2 {
   font-weight: 500;
@@ -446,6 +462,7 @@ body {
   gap: 4rem;
   margin: 7rem auto;
 }
+
 .about-iem-banner {
   flex: 1;
 }
@@ -459,6 +476,7 @@ body {
   position: relative;
   padding-bottom: 1rem;
 }
+
 .about-us-desc h2::after {
   content: "";
   position: absolute;
@@ -468,6 +486,7 @@ body {
   bottom: 0;
   left: 0;
 }
+
 .about-us-desc p {
   font-size: 2rem;
   color: #3d3d3d;
@@ -489,7 +508,27 @@ body {
   font-weight: bold;
   display: inline-block;
 }
-
+@media (max-width: 1400px) {
+  .about-us {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 1150px) {
+  .about-us {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-us img {
+    max-width: 70rem;
+    margin: auto;
+  }
+  .about-us-desc h2::after {
+    display: none;
+  }
+  .about-us-desc li::marker {
+    color: transparent;
+  }
+}
 .service-img-container {
   position: relative;
   height: 30rem;
@@ -520,6 +559,22 @@ body {
   gap: 5rem;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 10rem 0 7rem;
+}
+@media (max-width: 1400px) {
+  .nos-services-container {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 1100px) {
+  .nos-services-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .nos-services-container {
+    padding: 0 4rem;
+    grid-template-columns: 1fr;
+  }
 }
 .service-img-container {
   overflow: hidden;
