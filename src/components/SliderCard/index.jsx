@@ -19,7 +19,7 @@ const SliderCard = ({ cardData }) => {
       setLoaded(true);
     },
     breakpoints: {
-      "(min-width: 400px)": {
+      "(min-width: 0px)": {
         slides: { perView: 1.5, spacing: 5 },
       },
       "(min-width: 1000px)": {
