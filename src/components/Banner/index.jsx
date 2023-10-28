@@ -6,16 +6,48 @@ import Image from "next/image";
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    initial: 0,
-    loop: "free",
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      initial: 0,
+      loop: "free",
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+      created(slider) {
+        setLoaded(true);
+      },
     },
-    created(slider) {
-      setLoaded(true);
-    },
-  });
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 1500);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
 
   return (
     <>
@@ -35,7 +67,46 @@ export default function Banner() {
             </div>
           </div>
           <div className="keen-slider__slide sliders">
+            <div className="slider3"></div>
+            <a>nous contacter</a>
+            <div className="slider-content">
+              <h2>
+                Fabrication de Flexible <br />& Vente matériel Hydraulique
+              </h2>
+              <p>
+                Nous proposons à nos clients de la fiabilité et de la qualité à
+                un tarif abordable.
+              </p>
+            </div>
+          </div>
+          <div className="keen-slider__slide sliders">
+            <div className="slider-5"></div>
+            <a>nous contacter</a>
+            <div className="slider-content">
+              <h2>
+                Fabrication de Flexible <br />& Vente matériel Hydraulique
+              </h2>
+              <p>
+                Nous proposons à nos clients de la fiabilité et de la qualité à
+                un tarif abordable.
+              </p>
+            </div>
+          </div>
+          <div className="keen-slider__slide sliders">
             <div className="slider"></div>
+            <a>nous contacter</a>
+            <div className="slider-content">
+              <h2>
+                L'installation Et La Maintenance Des Équipements Électriques
+              </h2>
+              <p>
+                des services complets de maintenance et d'installation
+                électrique sur mesure pour Vous
+              </p>
+            </div>
+          </div>
+          <div className="keen-slider__slide sliders">
+            <div className="slider4"></div>
             <a>nous contacter</a>
             <div className="slider-content">
               <h2>
@@ -70,7 +141,7 @@ export default function Banner() {
           </>
         )}
       </div>
-      {loaded && instanceRef.current && (
+      {/* {loaded && instanceRef.current && (
         <div className="dots">
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys(),
@@ -86,7 +157,7 @@ export default function Banner() {
             );
           })}
         </div>
-      )}
+      )} */}
     </>
   );
 }

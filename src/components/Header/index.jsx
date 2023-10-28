@@ -20,8 +20,28 @@ const Header = () => {
           </div>
         </div>
         <div className="right-section">
-          <Iconify icon={"basil:facebook-solid"} width={25} />
-          <Iconify icon={"ic:baseline-whatsapp"} width={25} />
+          <a
+            href="https://www.facebook.com/profile.php?id=100083150537986"
+            target="_blank"
+            rel="noopener"
+          >
+            <Iconify
+              icon={"basil:facebook-solid"}
+              width={25}
+              style={{ color: "white" }}
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100083150537986"
+            target="_blank"
+            rel="noopener"
+          >
+            <Iconify
+              icon={"ic:baseline-whatsapp"}
+              width={25}
+              style={{ color: "white" }}
+            />
+          </a>
         </div>
       </div>
     </div>
