@@ -39,7 +39,7 @@ const SliderCard = ({ cardData }) => {
           <div className="card-product">
             <img src={card.image} alt={card.title} />
             <h3>{card.title}</h3>
-            <p>{card.description}</p>
+            {/* <p>{card.description}</p> */}
           </div>
         </div>
       ))}

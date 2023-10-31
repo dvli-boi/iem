@@ -14,6 +14,11 @@ function Services() {
       image: "/composite.jpeg",
     },
     {
+      title: "Verin Hydraulique",
+      description: "Léger et durable pour diverses applications.",
+      image: "/verin.jpeg",
+    },
+    {
       title: "Flexible inox",
       description:
         "Résistant à l'eau, l'air, et l'huile, adapté à tous les besoins.",

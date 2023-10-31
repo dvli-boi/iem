@@ -49,7 +49,8 @@ body {
 .slider2,
 .slider4,
 .slider3,
-.slider-5 {
+.slider-5,
+.slider6 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,6 +85,7 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+
 .slider-content {
   color: white;
   font-size: 2.6rem;
@@ -119,6 +121,9 @@ body {
   background-color: rgba(255, 255, 255, 0.856);
   border: 1px solid rgba(0, 0, 255, 0.448);
   color: #abab64;
+}
+.slider6 {
+  background-image: url("/photovaolcaique.jpg");
 }
 .slider {
   background-image: url("/installation.webp");

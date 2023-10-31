@@ -29,7 +29,7 @@ export default function Banner() {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 1500);
+          }, 3000);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
@@ -76,6 +76,18 @@ export default function Banner() {
               <p>
                 Nous proposons à nos clients de la fiabilité et de la qualité à
                 un tarif abordable.
+              </p>
+            </div>
+          </div>
+          <div className="keen-slider__slide sliders">
+            <div className="slider6"></div>
+
+            <a>nous contacter</a>
+            <div className="slider-content">
+              <h2>L'installation et la maintenance photovoltaïque</h2>
+              <p>
+                solutions d'installation et de maintenance photovoltaïque
+                garantissant une énergie propre et rentable.
               </p>
             </div>
           </div>
