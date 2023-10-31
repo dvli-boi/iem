@@ -10,7 +10,6 @@ const SliderCard = ({ cardData }) => {
 
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
-
     loop: "free",
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel);

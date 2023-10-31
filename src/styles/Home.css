@@ -616,3 +616,15 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+
+.keen-slider {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.keen-slider__slide {
+  flex: 1;
+  min-width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}

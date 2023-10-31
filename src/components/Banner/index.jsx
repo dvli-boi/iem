@@ -10,6 +10,7 @@ export default function Banner() {
     {
       initial: 0,
       loop: "free",
+      fade: true,
       slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel);
       },
@@ -29,7 +30,7 @@ export default function Banner() {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 3000);
+          }, 3500);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
