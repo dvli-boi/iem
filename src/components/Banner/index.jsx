@@ -81,18 +81,6 @@ export default function Banner() {
             </div>
           </div>
           <div className="keen-slider__slide sliders">
-            <div className="slider6"></div>
-
-            <a>nous contacter</a>
-            <div className="slider-content">
-              <h2>L'installation et la maintenance photovoltaïque</h2>
-              <p>
-                solutions d'installation et de maintenance photovoltaïque
-                garantissant une énergie propre et rentable.
-              </p>
-            </div>
-          </div>
-          <div className="keen-slider__slide sliders">
             <div className="slider-5"></div>
             <a>nous contacter</a>
             <div className="slider-content">

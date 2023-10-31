@@ -34,7 +34,7 @@ function Service() {
         <div className="service-wapper">
           <div className="service-img-container">
             <Image
-              src={"/image2.jpeg"}
+              src={"/photovaolcaique.jpg"}
               layout="fill"
               alt="installation sanitaire"
             />
@@ -43,12 +43,13 @@ function Service() {
             <div>
               <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
-            <h3>Maintenance Mécaniques Et Hydrauliques</h3>
+            <h3>Installation système photovoltaïque</h3>
           </div>
           <p>
-            Nous proposons des services de maintenance dédiés à la mécanique et
-            à l'hydraulique, assurant ainsi la longévité et les performances
-            continues de vos équipements.
+            Nous proposons des installations photovoltaïques clés en main,
+            garantissant performance et durabilité. Nos services de maintenance
+            assurent un fonctionnement optimal de vos équipements solaires.
+            Votre satisfaction est notre priorité.
           </p>
         </div>
         <div className="service-wapper">
