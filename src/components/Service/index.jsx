@@ -55,7 +55,7 @@ function Service() {
         <div className="service-wapper">
           <div className="service-img-container">
             <Image
-              src={"/remise.jpeg"}
+              src={"/btt.jpeg"}
               layout="fill"
               alt="installation sanitaire"
             />
@@ -64,12 +64,13 @@ function Service() {
             <div>
               <Iconify icon={"game-icons:auto-repair"} width={25} />
             </div>
-            <h3>Remise En État Des Machines</h3>
+            <h3>Cellules de protection de transformateur MT/BT</h3>
           </div>
           <p>
-            Si vos machines ont besoin d'une nouvelle vie, nous sommes
-            spécialisés dans la remise en état, redonnant à vos équipements une
-            seconde jeunesse à moindre coût.
+            Les cellules de protection MT/BT surveillent et protègent les
+            transformateurs industriels en détectant efficacement les
+            dysfonctionnements électriques, assurant la continuité des
+            opérations et la sécurité des installations
           </p>
         </div>
         <div className="service-wapper">
