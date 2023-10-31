@@ -80,6 +80,21 @@ export default function Banner() {
               </p>
             </div>
           </div>
+
+          <div className="keen-slider__slide sliders">
+            <div className="slider7"></div>
+            <a>nous contacter</a>
+            <div className="slider-content">
+              <h2>
+                Vente touts les accessoires <br />
+                hydrauliques et pneumatiques
+              </h2>
+              <p>
+                Trouvez tout ce dont vous avez besoin pour votre système
+                hydraulique ou pneumatique en un seul endroit.
+              </p>
+            </div>
+          </div>
           <div className="keen-slider__slide sliders">
             <div className="slider6"></div>
 

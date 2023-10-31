@@ -50,7 +50,8 @@ body {
 .slider4,
 .slider3,
 .slider-5,
-.slider6 {
+.slider6,
+.slider7 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,6 +140,9 @@ body {
 }
 .slider-5 {
   background-image: url("/hydrobanner.jpeg");
+}
+.slider7 {
+  background-image: url("/raccord.jpeg");
 }
 .slider img {
   object-fit: cover;
