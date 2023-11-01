@@ -59,7 +59,8 @@ export default function Banner() {
             <a>nous contacter</a>
             <div className="slider-content">
               <h2>
-                Fabrication de Flexible <br />& Vente matériel Hydraulique
+                Fabrication flexible <br />
+                et vérin hydraulique
               </h2>
               <p>
                 Nous proposons à nos clients de la fiabilité et de la qualité à
@@ -72,7 +73,8 @@ export default function Banner() {
             <a>nous contacter</a>
             <div className="slider-content">
               <h2>
-                Fabrication de Flexible <br />& Vente matériel Hydraulique
+                Vente touts les accessoires <br />
+                pneumatiques{" "}
               </h2>
               <p>
                 Nous proposons à nos clients de la fiabilité et de la qualité à
@@ -87,7 +89,7 @@ export default function Banner() {
             <div className="slider-content">
               <h2>
                 Vente touts les accessoires <br />
-                hydrauliques et pneumatiques
+                hydrauliques
               </h2>
               <p>
                 Trouvez tout ce dont vous avez besoin pour votre système
