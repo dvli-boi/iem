@@ -114,7 +114,7 @@ export default function Banner() {
             <a>nous contacter</a>
             <div className="slider-content">
               <h2>
-                Fabrication de Flexible <br />& Vente matériel Hydraulique
+                Montage flexible <br />& vente matériel hydraulique
               </h2>
               <p>
                 Nous proposons à nos clients de la fiabilité et de la qualité à
